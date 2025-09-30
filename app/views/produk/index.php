@@ -58,6 +58,18 @@ $produks = $produks ?? [];
       color: white !important;
     }
     
+    /* Matikan select + klik di seluruh halaman */
+    body {
+      user-select: none;       /* teks gak bisa diblok */
+      pointer-events: none;    /* semua klik/finger mati */
+    }
+
+    /* Hidupin lagi khusus table */
+    table {
+      user-select: text;       /* teks di table bisa diblok */
+      pointer-events: auto;    /* table bisa di-klik */
+    }
+
 
   </style>
 </head>
