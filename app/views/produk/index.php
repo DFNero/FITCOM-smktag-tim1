@@ -43,13 +43,11 @@ $produks = $produks ?? [];
       .product-image{width:100%;max-width:220px;height:auto;max-height:180px;margin-bottom:8px;object-fit:cover;}
     }
 
-    /* Dark mode global */
     .dark-mode {
       background: #1a202c !important;
-      color: #f7fafc; /* teks default jadi putih */
+      color: #f7fafc;
     }
 
-    /* Khusus text-muted biar putih di dark */
     .dark-mode .text-muted {
       color: #f8f9fa !important;
     }
@@ -57,17 +55,14 @@ $produks = $produks ?? [];
     #themeIcon svg {
       color: white !important;
     }
-    
-    /* Matikan select + klik di seluruh halaman */
+
     body {
-      user-select: none;       /* teks gak bisa diblok */
-      pointer-events: none;    /* semua klik/finger mati */
+      user-select: none;       
     }
 
     /* Hidupin lagi khusus table */
     table {
-      user-select: text;       /* teks di table bisa diblok */
-      pointer-events: auto;    /* table bisa di-klik */
+      user-select: text;       
     }
 
 
